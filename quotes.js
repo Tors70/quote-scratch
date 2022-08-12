@@ -37,7 +37,7 @@ const quotes = [
     person: "Jeremy Keith",
   },
   {
-    quote: `The most dangerous phrase in the language is, "We've always done it this way."`,
+    quote: `The most dangerous phrase in the language is: We've always done it this way.`,
     person: "Grace Hopper",
   },
   {

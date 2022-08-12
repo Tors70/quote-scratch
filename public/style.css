@@ -17,14 +17,31 @@ body {
   margin: auto;
 }
 .heading {
-  margin: 3rem 0 2rem 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 .buttons {
 }
 .btnQuotes {
-  padding: 0.5rem 1rem;
-  width: 10rem;
+  padding: 0.5rem 0.5rem;
+  width: 8rem;
   margin-bottom: 1rem;
+  background-color: rgb(169, 168, 168);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5788fa;
+  transition: background-color 0.2s;
+}
+
+#fname {
+  margin: 0rem 0 1rem 1.5rem;
 }
 .authorDiv {
   display: flex;
@@ -43,4 +60,26 @@ body {
 .quoteOutput {
   background-color: lightcyan;
   min-height: 200px;
+}
+
+#quote-container {
+  /* padding: 10px; */
+  width: 60%;
+  background-color: #cddaf7;
+  margin: 2rem 0rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.single-quote {
+  padding: 10px;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+.attribution {
+  font-size: 1rem;
+  font-weight: bold;
 }

@@ -14,6 +14,11 @@ app.get("/api/quotes/random", (req, res) => {
     quote: getRandomElement(quotes),
   });
 });
+app.get("/api/quotes", (req, res) => {
+  res.send({
+    quotes,
+  });
+});
 
 app.listen(PORT, () => {
   console.log("Server listening on port:" + PORT);
