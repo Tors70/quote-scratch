@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Quote API</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Quote generator</h1>
+      <div class="buttons">
+        <button class="btnQuotes" id="fetch-random">Random quote</button>
+        <button class="btnQuotes" id="allBtn">All quotes</button>
+      </div>
+      <div class="inputs">
+        <div class="authorDiv">
+          <form>
+            <!-- <label for="fname">Enter author:</label><br /> -->
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="  Enter author"
+            /><br />
+          </form>
+          <button class="btnQuotes" id="authBtn">Fetch:</button>
+        </div>
+      </div>
+      <div id="quote-container"></div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

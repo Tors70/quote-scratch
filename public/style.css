@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  max-width: 1200px;
+  margin: auto;
+}
+.heading {
+  margin: 3rem 0 2rem 0;
+}
+.buttons {
+}
+.btnQuotes {
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+.authorDiv {
+  display: flex;
+}
+.authBtn {
+  margin-left: 1rem;
+}
+#fname {
+  width: 10rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0;
+}
+::placeholder {
+  margin-left: 2rem;
+}
+.quoteOutput {
+  background-color: lightcyan;
+  min-height: 200px;
+}
