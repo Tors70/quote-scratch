@@ -1,6 +1,6 @@
 const fetchRandomButton = document.getElementById("fetch-random");
-// const fetchallBtn = document.getElementById("fetch-random");
-// const fetchauthBtn = document.getElementById("fetch-random");
+const fetchAllButton = document.getElementById("fetch-quotes");
+const fetchByAuthorButton = document.getElementById("fetch-author");
 const quoteContainer = document.getElementById("quote-container");
 
 const resetQuotes = () => {
@@ -39,5 +39,33 @@ fetchRandomButton.addEventListener("click", () => {
     })
     .then((response) => {
       generateQuotes([response.quote]);
+    });
+});
+
+fetchAllButton.addEventListener("click", () => {
+  fetch("/api/quotes")
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        renderError(response);
+      }
+    })
+    .then((response) => {
+      generateQuotes(response.quotes);
+    });
+});
+fetchByAuthorButton.addEventListener("click", () => {
+  const author = document.getElementById("author").value;
+  fetch(`/api/quotes?person=${author}`)
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        renderError(response);
+      }
+    })
+    .then((response) => {
+      generateQuotes(response.quotes);
     });
 });
